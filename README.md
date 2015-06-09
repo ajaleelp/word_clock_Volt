@@ -1,4 +1,3 @@
-# Place your app's docs here.
+# word_clock_Volt
+A word clock widget in Volt
 
-## New to Volt?
-Be sure to read the volt docs at http://docs.voltframework.com
