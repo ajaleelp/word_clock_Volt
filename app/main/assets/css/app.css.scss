@@ -1,10 +1,17 @@
 // Place your apps css here
 
-.flex-parent{
+.clock-parent-flex{
   display: flex;
   height: 500px;
 }
 
-.flex-child{
+.clock-child-flex{
   margin: auto;
 }
+
+.row-parent-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
