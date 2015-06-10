@@ -3,30 +3,44 @@
 
 <:Body>
   <div class="clock-parent-flex">
-    <h1 style="color:grey" class="clock-child-flex">
+    <h1 class="clock-child-flex off">
       <span class="row-parent-flex">
-        <span style="text-shadow:2px 2px 4px blue">IT IS</span><span> HALF</span><span> TEN<br></span>
+        <span class="on">IT IS</span>
+        <span class="{{if half?}}on{{end}}"> HALF</span>
+        <span class="{{if ten?}}on{{end}}">TEN<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>QUARTER</span><span>TWENTY<br></span>
+        <span class="{{if quarter?}}on{{end}}">QUARTER</span>
+        <span class="{{if twenty?}}on{{end}}">TWENTY<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>FIVE</span><span>MINUTES</span><span>TO<br></span>
+        <span class="{{if five?}}on{{end}}">FIVE</span>
+        <span class="{{if minutes?}}on{{end}}"> MINUTES</span>
+        <span class="{{if to?}}on{{end}}"> TO<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>PAST</span><span>ONE</span><span>THREE<br></span>
+        <span class="{{if past?}}on{{end}}">PAST</span>
+        <span class="{{if n1?}}on{{end}}"> ONE</span>
+        <span class="{{if n3?}}on{{end}}">THREE<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>TWO</span><span>FOUR</span><span>FIVE<br></span>
+        <span class="{{if n2?}}on{{end}}">TWO</span>
+        <span class="{{if n4?}}on{{end}}">FOUR</span>
+        <span class="{{if n5?}}on{{end}}">FIVE<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>SIX</span><span>SEVEN</span><span>EIGHT<br></span>
+        <span class="{{if n6?}}on{{end}}">SIX</span>
+        <span class="{{if n7?}}on{{end}}">SEVEN</span>
+        <span class="{{if n8?}}on{{end}}">EIGHT<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>NINE</span><span>TEN</span><span>ELEVEN<br></span>
+        <span class="{{if n9?}}on{{end}}">NINE</span>
+        <span class="{{if n10?}}on{{end}}">TEN</span>
+        <span class="{{if n11?}}on{{end}}">ELEVEN<br></span>
       </span>
       <span class="row-parent-flex">
-        <span>TWELVE</span><span>O'CLOCK<br></span>
+        <span class="{{if n12?}}on{{end}}">TWELVE</span>
+        <span class="{{if oclock?}}on{{end}}">O'CLOCK<br></span>
       </span>
     </h1>
 
