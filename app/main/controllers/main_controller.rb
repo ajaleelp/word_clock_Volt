@@ -8,7 +8,6 @@ module Main
     def about
       # Add code for when the about view is loaded
     end
-
     private
 
     # The main template contains a #template binding that shows another
@@ -18,10 +17,67 @@ module Main
       "#{params._component || 'main'}/#{params._controller || 'main'}/#{params._action || 'index'}"
     end
 
-    # Determine if the current nav component is the active one by looking
-    # at the first part of the url against the href attribute.
-    def active_tab?
-      url.path.split('/')[1] == attrs.href.split('/')[1]
+    def half?
+      false
     end
+    def ten?
+      true
+    end
+    def quarter?
+      false
+    end
+    def twenty?
+      false
+    end
+    def five?
+      false
+    end
+    def minutes?
+      true
+    end
+    def to?
+      true
+    end
+    def past?
+      false
+    end
+    def n1?
+      false
+    end
+    def n2?
+      false
+    end
+    def n3?
+      false
+    end
+    def n4?
+      true
+    end
+    def n5?
+      false
+    end
+    def n6?
+      false
+    end
+    def n7?
+      false
+    end
+    def n8?
+      false
+    end
+    def n9?
+      false
+    end
+    def n10?
+      false
+    end
+    def n11?
+      false
+    end
+    def n12?
+      false
+    end
+
+
   end
 end
