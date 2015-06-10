@@ -42,40 +42,48 @@ module Main
       false
     end
     def n1?
-      false
+      hour_to_show == 1
     end
     def n2?
-      false
+      hour_to_show == 2
     end
     def n3?
-      false
+      hour_to_show == 3
     end
     def n4?
-      true
+      hour_to_show == 4
     end
     def n5?
-      false
+      hour_to_show == 5
     end
     def n6?
-      false
+      hour_to_show == 6
     end
     def n7?
-      false
+      hour_to_show == 7
     end
     def n8?
-      false
+      hour_to_show == 8
     end
     def n9?
-      false
+      hour_to_show == 9
     end
     def n10?
-      false
+      hour_to_show == 10
     end
     def n11?
-      false
+      hour_to_show == 11
     end
     def n12?
-      false
+      hour_to_show == 12
+    end
+
+    def hour_to_show
+      Time.now.hour%12 + (rounded_minutes > 30 ? 1 : 0)
+    end
+
+    def rounded_minutes
+      Time.now.min
     end
 
 
