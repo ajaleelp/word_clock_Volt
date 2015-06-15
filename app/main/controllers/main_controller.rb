@@ -9,7 +9,7 @@ module Main
     end
 
     def current_time
-      Time.live
+      Time.now.live
     end
 
 
@@ -88,11 +88,11 @@ module Main
     end
 
     def hour_to_show
-      Time.now.hour%12 + (rounded_minutes > 30 ? 1 : 0)
+      current_time.hour%12 + (rounded_minutes > 30 ? 1 : 0)
     end
 
     def rounded_minutes
-      Time.now.min
+      ((((current_time-150).min)/5).to_i+1)*5
     end
 
 
