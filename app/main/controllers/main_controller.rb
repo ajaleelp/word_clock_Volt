@@ -27,28 +27,31 @@ module Main
     end
 
     def half?
-      false
+      rounded_minutes == 30
     end
     def ten?
-      true
+      (rounded_minutes-30).abs == 20
     end
     def quarter?
-      false
+      (rounded_minutes-30).abs == 15
     end
     def twenty?
-      false
+      (rounded_minutes-30).abs < 15
     end
     def five?
-      false
+      (rounded_minutes-30).abs == 25
     end
     def minutes?
-      true
+      rounded_minutes%15 != 0
     end
     def to?
-      true
+      rounded_minutes%60 > 30
     end
     def past?
-      false
+      rounded_minutes > 0 && rounded_minutes < 35
+    end
+    def oclock?
+      rounded_minutes%60 == 0
     end
     def n1?
       hour_to_show == 1
@@ -88,7 +91,7 @@ module Main
     end
 
     def hour_to_show
-      current_time.hour%12 + (rounded_minutes > 30 ? 1 : 0)
+      current_time.hour%12 + (rounded_minutes%60 > 30 ? 1 : 0)
     end
 
     def rounded_minutes
