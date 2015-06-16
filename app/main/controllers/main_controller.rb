@@ -87,7 +87,7 @@ module Main
       hour_to_show == 11
     end
     def n12?
-      hour_to_show == 12
+      hour_to_show == 0
     end
 
     def hour_to_show
