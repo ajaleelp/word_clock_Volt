@@ -39,7 +39,7 @@ module Main
       (rounded_minutes-30).abs < 15
     end
     def five?
-      (rounded_minutes-30).abs == 25
+      (rounded_minutes-30).abs == 25 || (rounded_minutes-30).abs == 5
     end
     def minutes?
       rounded_minutes%15 != 0
