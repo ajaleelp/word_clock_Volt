@@ -98,6 +98,18 @@ module Main
       ((((current_time-150).min)/5).to_i+1)*5
     end
 
+    def time_of_day
+      case current_time.hour
+      when 4..11
+        "morning"
+      when 12..14
+        "afternoon"
+      when 15..19
+        "evening"
+      else
+        "night"
+      end
+    end
 
   end
 end
